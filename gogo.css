@@ -91,6 +91,7 @@ p {
 }
 
 .advertisement {
+  position: relative;
   height: 80px;
   width: 1055px;
   justify-self: center;
@@ -131,4 +132,23 @@ p {
   100% {
     transform: translateX(0px);
   }
+}
+
+.runner {
+  position: absolute;
+  display: flex;
+  width: 1055px;
+  top: 70px;
+  display: flex;
+  gap: 5px;
+  z-index: 2;
+  justify-content: center;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  border: solid white 1px;
+  background-color: rgb(123, 123, 123);
 }
