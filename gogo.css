@@ -8,6 +8,8 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  background-color: #eeecec;
+  padding-bottom: 20px;
 }
 .header1 {
   display: flex;
@@ -452,4 +454,247 @@ p {
 
 .gogo_stats img {
   border-radius: 30px;
+}
+.second {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+.header_second {
+  width: 1055px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 26px;
+  color: #000;
+}
+
+.ctori {
+  background-color: #00b0f4;
+  color: white;
+  height: 25px;
+  width: 70px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.storys {
+  height: 235px;
+  width: 1055px;
+  overflow: scroll;
+}
+
+.scroll {
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+  overflow: scroll;
+}
+
+.box2 {
+  position: relative;
+  height: 100%;
+  width: 161.56px !important;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.bulan {
+  border-radius: 5px;
+}
+
+.logosmall {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.uusgalt {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.textcontainer {
+  padding: 0px 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  bottom: 10px;
+  z-index: 2;
+}
+
+.textcontainer p {
+  overflow-y: hidden;
+  font-size: 13px;
+  color: white;
+  max-height: 33px;
+  font-weight: 400;
+  transition: max-height 1s;
+}
+
+span {
+  font-size: 13px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.nud {
+  display: flex;
+  align-items: center;
+}
+
+.bulan {
+  object-fit: cover;
+}
+
+.box2:hover .bulan {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.box2:hover {
+  border-radius: 5px;
+}
+.box2:hover .textcontainer p {
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+.main {
+  width: 1055px;
+  display: flex;
+}
+
+.left {
+  width: 60%;
+  height: 300px;
+}
+
+.right {
+  width: 40%;
+  height: 300px;
+  border-left: solid gray 0.5px;
+}
+
+.boxo {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding-right: 15px;
+}
+
+.boxos {
+  height: 60.87px;
+  width: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.today {
+  display: flex;
+  gap: 5px;
+}
+
+.gray {
+  height: 5px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 4px;
+}
+
+.today p {
+  color: #00b0f4;
+  font-size: 14.5px;
+}
+
+.date p {
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
+  justify-self: center;
+}
+
+.blue {
+  background-color: #00b0f4;
+}
+
+.blue + p {
+  color: #00b0f4;
+}
+
+.date {
+  position: relative;
+  top: 27px;
+}
+
+.boxos:first-child .date {
+  top: 0px;
+}
+
+.boxos:hover .date {
+  top: 25px;
+  transition: top 0.5s;
+}
+
+.boxos:first-child:hover .date {
+  top: 0px;
+}
+
+.boxo:has(.boxos:hover) .boxos:hover .gray {
+  background-color: #00b0f4;
+}
+
+.boxo:has(.boxos:hover) .boxos:hover p {
+  color: #00b0f4;
+}
+
+.boxos:last-child {
+  display: flex;
+  position: relative;
+  height: 19px;
+  width: 19px;
+  background-color: gray;
+  border-radius: 3px;
+  top: 27px;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.boxos:last-child .pls {
+  color: #1d1d1d;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.boxos:last-child:hover {
+  background-color: #00b0f4;
+}
+
+.boxos:last-child:hover .pls {
+  color: #f0efef;
 }
