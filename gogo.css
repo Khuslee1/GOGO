@@ -894,4 +894,56 @@ h4 {
 .big p {
   font-size: 20px;
   font-weight: 500;
+  max-height: none;
+  border-bottom: solid rgba(179, 179, 179, 0.481) 1px;
+  height: 55px;
+  opacity: 1;
+}
+
+.big {
+  bottom: 40px;
+  padding: 0px 30px 0px 30px;
+}
+
+.tsenher {
+  position: absolute;
+  background-color: #00b0f4;
+  color: white;
+  font-size: 14px;
+  font-family: "helvetica neue", sans-serif;
+  text-align: center;
+  height: 26px;
+  padding: 5px 5px 0px 5px;
+  border-radius: 5px;
+  z-index: 100;
+  top: -33px;
+}
+
+.hudulnu {
+  gap: 5px;
+}
+
+.hal:hover .big .hudulnu {
+  gap: 20px;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.hal:hover .big .tsenher {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.hal:hover .big p {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.boxer:has(.yri) .yri .textcontainer {
+  padding: 0px 20px 10px 20px;
+}
+
+.boxer:has(.yri:hover) .yri .textcontainer {
+  opacity: 0.7;
+  transition: 0.5s;
 }
